@@ -4,6 +4,9 @@
 # cat .ssh/config 
 # Host top8.biz
 #    Port 7822
+# TODO rsync changes directory permissions, and it should be set back to +r and +x
+rsync -a -v  --exclude .git --exclude  upload_rsync.sh --exclude *~  --exclude images ../TalmudIlluminated/ top8team@top8.biz:/home/top8team/public_html/talmudilluminated.com/
 
-rsync -a -v  --exclude .git --exclude  upload_rsync.sh --exclude *~ --exclude images ../TalmudIlluminated/ top8team@top8.biz:/home/top8team/public_html/talmudilluminated.com/
+# If you want to do update images, uncomment the line below
+#rsync -a -v  --exclude .git --exclude  upload_rsync.sh --exclude *~  ../TalmudIlluminated/ top8team@top8.biz:/home/top8team/public_html/talmudilluminated.com/
 
