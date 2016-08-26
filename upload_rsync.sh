@@ -10,3 +10,4 @@ rsync -a -v  --exclude .git --exclude  upload_rsync.sh --exclude *~  --exclude i
 # If you want to do update images, uncomment the line below
 #rsync -a -v  --exclude .git --exclude  upload_rsync.sh --exclude *~  ../TalmudIlluminated/ top8team@top8.biz:/home/top8team/public_html/talmudilluminated.com/
 
+echo "Please update permissions on the site!!!"
